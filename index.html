@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloisa Soares - Cerimonialista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="imagens/logocabeçaljo.jpg" alt="Eloisa Soares Cerimonialista" class="logo-image">
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-lotus"></div>
+                <div class="floating-lotus"></div>
+                <div class="floating-lotus"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">SONHOU</span>
+                    <span class="title-line">COM O</span>
+                    <span class="title-line highlight">GRANDE DIA?</span>
+                </h1>
+                <p class="hero-subtitle">Nós realizamos! Cada detalhe do seu evento, pensado com carinho e profissionalismo.</p>
+                <button class="cta-button" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    Fale com quem entende de sonho realizado!
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="placeholder-image">
+                        <i class="fas fa-camera"></i>
+                        <p>Foto do casamento em destaque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quem é Eloisa Soares</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="imagens/FotoEloPerfil.jpg" alt="Eloisa Soares Cerimonialista" class="profile-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Transformando Sonhos em Realidade</h3>
+                    <p>Com anos de experiência no mercado de eventos, Eloisa Soares é uma cerimonialista apaixonada por criar momentos únicos e inesquecíveis. Especializada em casamentos, ela combina criatividade, organização e atenção aos detalhes para garantir que cada celebração seja perfeita.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Personalização única</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Pontualidade garantida</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Excelência em cada detalhe</span>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button secondary" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Vamos conversar sobre seu evento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Posso Ajudar</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Serviços completos para tornar seu dia especial ainda mais perfeito</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Planejamento</h3>
+                    <p>Uma cerimonialista pode ajudar no planejamento do casamento desde o início, garantindo que todos os detalhes sejam considerados e organizados de forma eficiente.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Coordenação</h3>
+                    <p>Durante o grande dia, uma cerimonialista pode coordenar todos os fornecedores, garantindo que tudo esteja em ordem e que o cronograma seja seguido rigorosamente.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Gestão de Imprevistos</h3>
+                    <p>Caso ocorra algum problema, uma cerimonialista pode lidar com a situação de forma rápida e eficiente, sem causar estresse ou preocupação para os noivos.</p>
+                </div>
+                
+            </div>
+            
+            <div class="services-cta">
+                <button class="cta-button large" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    Solicite um orçamento personalizado
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfólio</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Alguns dos momentos especiais que tive o prazer de criar</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 1</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Casamento Romântico</h4>
+                            <p>Jardim • 150 convidados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 2</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Cerimônia Moderna</h4>
+                            <p>Salão de eventos • 200 convidados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 3</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Celebração Intimista</h4>
+                            <p>Fazenda • 80 convidados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 4</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Festa Tradicional</h4>
+                            <p>Igreja • 300 convidados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 5</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Evento Temático</h4>
+                            <p>Resort • 120 convidados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-wedding">
+                            <i class="fas fa-camera"></i>
+                            <p>Casamento 6</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Celebração Elegante</h4>
+                            <p>Hotel • 180 convidados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <button class="cta-button large" onclick="openWhatsApp()">
+                    <i class="fas fa-images"></i>
+                    Veja mais fotos e converse sobre seu evento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Criar Seu Sonho Juntos</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Entre em contato e vamos conversar sobre como tornar seu evento inesquecível</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>Respondo em até 2 horas</p>
+                            <a href="#" onclick="openWhatsApp()">Conversar agora</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>@e.sacessoria_</p>
+                            <a href="https://instagram.com/e.sacessoria_" target="_blank">Seguir</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contato@eloisasoares.com</p>
+                            <a href="mailto:contato@eloisasoares.com">Enviar email</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Pronto para começar?</h3>
+                        <p>Vamos conversar sobre seu evento e criar algo verdadeiramente especial juntos.</p>
+                        <button class="cta-button large" onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                            Iniciar conversa no WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/logorodape.jpg" alt="Eloisa Soares Cerimonialista" class="footer-logo-image">
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://instagram.com/e.sacessoria_" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eloisa Soares. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
