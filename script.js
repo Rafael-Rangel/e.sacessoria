@@ -20,24 +20,24 @@ function createBackgroundParticles() {
         particleContainer.style.width = '100%';
         particleContainer.style.height = '100%';
         particleContainer.style.pointerEvents = 'none';
-        particleContainer.style.zIndex = '1';
+        particleContainer.style.zIndex = '5';
         particleContainer.style.overflow = 'hidden';
         
         section.appendChild(particleContainer);
         
-        // Different particle colors for each section
+        // Different particle colors for each section (more visible)
         const particleColors = [
-            'rgba(143, 188, 143, 0.15)', // hero - light green
-            'rgba(45, 80, 22, 0.1)',     // about - dark green
-            'rgba(143, 188, 143, 0.12)', // services - light green
-            'rgba(45, 80, 22, 0.08)',    // portfolio - dark green
-            'rgba(143, 188, 143, 0.18)'  // contact - light green
+            'rgba(143, 188, 143, 0.4)', // hero - light green
+            'rgba(45, 80, 22, 0.3)',     // about - dark green
+            'rgba(143, 188, 143, 0.35)', // services - light green
+            'rgba(45, 80, 22, 0.25)',    // portfolio - dark green
+            'rgba(143, 188, 143, 0.45)'  // contact - light green
         ];
         
         // Create floating particles
         function createBackgroundParticle() {
             const particle = document.createElement('div');
-            const size = Math.random() * 3 + 1; // 1-4px
+            const size = Math.random() * 4 + 2; // 2-6px
             const color = particleColors[sectionIndex];
             
             particle.style.position = 'absolute';
@@ -68,11 +68,11 @@ function createBackgroundParticles() {
         }
         
         // Create particles more frequently but with smaller size
-        setInterval(createBackgroundParticle, 2000 + Math.random() * 1000);
+        setInterval(createBackgroundParticle, 1000 + Math.random() * 500);
         
         // Create initial particles for each section
-        for (let i = 0; i < 8; i++) {
-            setTimeout(createBackgroundParticle, i * 800);
+        for (let i = 0; i < 12; i++) {
+            setTimeout(createBackgroundParticle, i * 300);
         }
         
         // Add horizontal floating particles
