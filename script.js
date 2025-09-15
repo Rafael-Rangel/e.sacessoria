@@ -55,7 +55,7 @@ function createBackgroundParticles() {
         
         // Create initial particles
         for (let i = 0; i < 5; i++) {
-            setTimeout(createBackgroundParticle, i * 600);
+            setTimeout(createBackgroundParticle, i * 1000);
         }
     });
 }
@@ -549,24 +549,75 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Enhanced typing animation for hero title
+    // Enhanced letter-by-letter reveal animation for hero title with word grouping
     if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        heroTitle.style.borderRight = '2px solid var(--primary-green)';
+        // Store original text and clean up completely
+        const originalText = heroTitle.textContent || heroTitle.innerText;
+        heroTitle.innerHTML = '';
+        heroTitle.style.textAlign = 'left';
         
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                heroTitle.style.borderRight = 'none';
+        // Split text into words
+        const words = originalText.trim().split(/\s+/);
+        
+        words.forEach((word, wordIndex) => {
+            // Create a word container to keep letters together
+            const wordContainer = document.createElement('span');
+            wordContainer.style.display = 'inline-block';
+            wordContainer.style.whiteSpace = 'nowrap'; // Prevents word breaking
+            
+            // Add space between words (except for the first word and after line break)
+            // Only add space if this is not the first word and not after the line break
+            if (wordIndex > 0 && wordIndex !== 3) { // Don't add space before "GRANDE" (wordIndex 3)
+                const spaceSpan = document.createElement('span');
+                spaceSpan.innerHTML = '&nbsp;';
+                spaceSpan.style.display = 'inline-block';
+                spaceSpan.style.width = '0.3em';
+                spaceSpan.style.opacity = '0';
+                spaceSpan.style.transform = 'translateY(20px)';
+                spaceSpan.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                wordContainer.appendChild(spaceSpan);
             }
-        }
+            
+            // Create spans for each letter in the word
+            for (let i = 0; i < word.length; i++) {
+                const char = word[i];
+                const charSpan = document.createElement('span');
+                charSpan.style.display = 'inline-block';
+                charSpan.style.opacity = '0';
+                charSpan.style.transform = 'translateY(20px)';
+                charSpan.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                charSpan.textContent = char;
+                
+                wordContainer.appendChild(charSpan);
+            }
+            
+            heroTitle.appendChild(wordContainer);
+            
+            // Force line break after "O" (which is wordIndex 2)
+            if (wordIndex === 2) { // "O" is the 3rd word (index 2)
+                const br = document.createElement('br');
+                heroTitle.appendChild(br);
+            }
+        });
         
-        setTimeout(typeWriter, 1000);
+        // Trigger animation after a delay
+        setTimeout(() => {
+            const allSpans = heroTitle.querySelectorAll('span');
+            allSpans.forEach((span, spanIndex) => {
+                setTimeout(() => {
+                    span.style.opacity = '1';
+                    span.style.transform = 'translateY(0)';
+                    
+                    // Add subtle bounce effect
+                    setTimeout(() => {
+                        span.style.transform = 'translateY(-2px)';
+                        setTimeout(() => {
+                            span.style.transform = 'translateY(0)';
+                        }, 150);
+                    }, 250);
+                }, spanIndex * 60); // Faster letter animation
+            });
+        }, 1000);
     }
 
     // Add floating animation to logos

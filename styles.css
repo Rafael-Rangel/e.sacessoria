@@ -7,17 +7,17 @@
 
 /* Cursor personalizado - Usando SVG */
 body {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFFFFF" stroke="%232D5016" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
 }
 
 /* Todos os elementos clicáveis com cursor SVG personalizado */
 a, button, .cta-button, .nav-link, .portfolio-item, .service-card, .contact-item {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%238FBC8F" stroke="%232D5016" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), pointer !important;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFFFFF" stroke="%232D5016" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), pointer !important;
 }
 
 /* Especificidade adicional para botões */
 button:hover, .cta-button:hover {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%238FBC8F" stroke="%232D5016" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), pointer !important;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFFFFF" stroke="%232D5016" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), pointer !important;
 }
 
 :root {
@@ -139,7 +139,8 @@ body {
 }
 
 .logo-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transition: all 0.5s ease 0.05s;
 }
 
 .logo-text {
@@ -156,7 +157,7 @@ body {
     text-decoration: none;
     color: var(--gray);
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     position: relative;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -176,8 +177,9 @@ body {
 
 .nav-link:hover {
     color: var(--primary-green);
-    transform: translateY(-2px);
-    background: rgba(45, 80, 22, 0.05);
+    transform: translateY(-1px);
+    background: rgba(45, 80, 22, 0.03);
+    transition: all 0.5s ease 0.05s;
 }
 
 .nav-link:hover::before {
@@ -298,12 +300,36 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 700;
     color: var(--primary-green);
     line-height: 1.1;
     margin-bottom: 1.5rem;
     position: relative;
+    text-align: left;
+}
+
+/* Garantir que as primeiras palavras de cada linha comecem alinhadas */
+.hero-title {
+    text-align: left;
+    word-spacing: 0;
+}
+
+.hero-title span[style*="white-space: nowrap"] {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    vertical-align: top;
+}
+
+/* Remover espaços extras no início de novas linhas */
+.hero-title span[style*="white-space: nowrap"]:first-child {
+    margin-left: 0;
+}
+
+/* Garantir que quando uma palavra quebra para nova linha, ela comece no início */
+.hero-title span[style*="white-space: nowrap"] {
+    text-indent: 0;
 }
 
 .hero-title .title-line {
@@ -312,10 +338,17 @@ body {
     cursor: default;
 }
 
+/* Efeitos para as letras individuais */
+.hero-title .title-line span {
+    text-shadow: 0 0 20px rgba(45, 80, 22, 0.3);
+    filter: drop-shadow(0 0 10px rgba(45, 80, 22, 0.2));
+}
+
 .hero-title .title-line:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-2px) scale(1.02);
     color: var(--light-green);
-    text-shadow: 0 5px 15px rgba(45, 80, 22, 0.3);
+    text-shadow: 0 3px 8px rgba(45, 80, 22, 0.2);
+    transition: all 0.6s ease 0.1s;
 }
 
 .title-line {
@@ -386,7 +419,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -406,12 +439,13 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
+    transition: left 1s ease;
 }
 
 .cta-button:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 20px 50px rgba(45, 80, 22, 0.5);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(45, 80, 22, 0.3);
+    transition: all 0.5s ease 0.05s;
 }
 
 .cta-button:hover::before {
@@ -469,7 +503,15 @@ section {
     text-align: center;
     margin-bottom: 4rem;
     position: relative;
-    z-index: 15;
+    z-index: 20;
+}
+
+/* Garantir visibilidade dos títulos */
+.section-header h2.section-title {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    color: var(--primary-green) !important;
 }
 
 .section-title {
@@ -477,45 +519,35 @@ section {
     font-weight: 700;
     color: var(--primary-green);
     margin-bottom: 1rem;
-    opacity: 1;
+    opacity: 1 !important;
     animation: fadeInUp 1s ease-out forwards;
     position: relative;
     display: inline-block;
     cursor: default;
-    transition: all 0.3s ease;
-    z-index: 15;
+    transition: all 0.5s ease;
+    z-index: 20;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    visibility: visible !important;
 }
 
 .section-title:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     color: var(--light-green);
-    text-shadow: 0 5px 15px rgba(45, 80, 22, 0.2);
+    text-shadow: 0 3px 8px rgba(45, 80, 22, 0.15);
+    transition: all 0.6s ease 0.1s;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: var(--gradient);
-    transition: width 0.3s ease;
-}
+/* Removido - linha animada nos títulos */
 
-.section-title:hover::after {
-    width: 100%;
-}
+/* Removido - animação da linha no hover */
 
 .title-underline {
     width: 80px;
     height: 4px;
     background: var(--gradient);
-    margin: 0 auto 1rem;
+    margin: 30px auto 1rem;
     border-radius: 2px;
     opacity: 1;
-    animation: fadeInUp 1s ease-out 0.2s forwards;
     position: relative;
     z-index: 15;
 }
@@ -581,7 +613,8 @@ section {
 }
 
 .profile-image:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
+    transition: all 0.6s ease 0.1s;
 }
 
 .image-decoration {
@@ -628,12 +661,25 @@ section {
 }
 
 .feature-item:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
+    transition: all 0.5s ease 0.05s;
 }
 
 .feature-item i {
     color: var(--primary-green);
     font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Garantir que os ícones mantenham a cor verde no hover */
+.feature-item:hover i {
+    color: var(--primary-green) !important;
+}
+
+/* Regra adicional para garantir cor dos ícones */
+.about-features .feature-item i,
+.about-features .feature-item:hover i {
+    color: var(--primary-green) !important;
 }
 
 /* Services Section */
@@ -643,6 +689,14 @@ section {
     animation: gradientShift 8s ease infinite;
     position: relative;
     overflow: hidden;
+}
+
+/* Garantir que o título da seção services seja visível */
+.services .section-title {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: var(--primary-green) !important;
+    z-index: 25 !important;
 }
 
 .services::before {
@@ -696,8 +750,9 @@ section {
 }
 
 .service-card:hover {
-    transform: translateY(-15px) rotateX(5deg);
-    box-shadow: 0 25px 50px rgba(45, 80, 22, 0.2);
+    transform: translateY(-8px) rotateX(2deg);
+    box-shadow: 0 15px 35px rgba(45, 80, 22, 0.15);
+    transition: all 0.6s ease 0.1s;
 }
 
 .service-card:hover::before {
@@ -709,8 +764,9 @@ section {
 }
 
 .service-card:hover h3 {
-    transform: scale(1.05);
+    transform: scale(1.02);
     color: var(--light-green);
+    transition: all 0.5s ease 0.1s;
 }
 
 .service-icon {
@@ -742,8 +798,9 @@ section {
 }
 
 .service-icon:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 10px 25px rgba(45, 80, 22, 0.3);
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(45, 80, 22, 0.2);
+    transition: all 0.5s ease 0.1s;
 }
 
 .service-icon:hover::before {
@@ -840,8 +897,9 @@ section {
 }
 
 .portfolio-item:hover {
-    transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 25px 50px rgba(45, 80, 22, 0.3);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 35px rgba(45, 80, 22, 0.2);
+    transition: all 0.6s ease 0.1s;
 }
 
 .portfolio-item:hover::before {
@@ -944,7 +1002,8 @@ section {
 }
 
 .contact-item:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
+    transition: all 0.5s ease 0.05s;
 }
 
 .contact-icon {
@@ -1045,7 +1104,8 @@ section {
 }
 
 .footer-logo-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transition: all 0.5s ease 0.05s;
 }
 
 .footer-text h4 {
@@ -1079,7 +1139,8 @@ section {
 .footer-social a:hover {
     background: var(--white);
     color: var(--primary-green);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    transition: all 0.5s ease 0.05s;
 }
 
 .footer-bottom {
@@ -1090,6 +1151,18 @@ section {
 }
 
 /* Responsive Design */
+@media (max-width: 1190px) {
+    .hero-title {
+        font-size: 4.8vw;
+    }
+}
+
+@media (min-width: 1191px) {
+    .hero-title {
+        font-size: 56px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -1100,13 +1173,17 @@ section {
     }
     
     .hero-content {
+        margin-top: 50px;
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 8vw;
+        margin: auto;
+        width: fit-content;
+        text-align: center !important;
     }
     
     .about-content {
@@ -1146,9 +1223,21 @@ section {
     }
 }
 
+@media (max-width: 768px) and (min-width: 523px) {
+    .hero-subtitle {
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width: 522px) {
+    .hero-subtitle {
+        font-size: 3.7vw;
+    }
+}
+
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 9vw;
     }
     
     .cta-button {
@@ -1215,11 +1304,7 @@ section {
 }
 
 /* Animações extras para interatividade */
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    75% { transform: rotate(-5deg); }
-}
+/* Removido - animação wiggle */
 
 @keyframes glow {
     0%, 100% { box-shadow: 0 0 5px var(--primary-green); }
@@ -1239,19 +1324,20 @@ section {
 }
 
 .text-hover:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     color: var(--light-green);
-    text-shadow: 0 2px 10px rgba(45, 80, 22, 0.3);
+    text-shadow: 0 2px 8px rgba(45, 80, 22, 0.2);
+    transition: all 0.5s ease 0.05s;
 }
 
 /* Animações para elementos específicos */
 .hero-subtitle:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
     color: var(--primary-green);
+    transition: all 0.5s ease 0.05s;
 }
 
 .about-text h3:hover {
-    animation: wiggle 0.5s ease-in-out;
     color: var(--light-green);
 }
 
@@ -1262,7 +1348,7 @@ section {
 
 .feature-item:hover i {
     animation: bounce 0.6s ease-in-out;
-    color: var(--light-green);
+    color: var(--primary-green) !important;
 }
 
 /* Efeitos de partículas flutuantes */
@@ -1322,7 +1408,8 @@ section {
 }
 
 .logo-image:hover {
-    animation: wiggle 0.5s ease-in-out;
+    transform: scale(1.02);
+    transition: all 0.5s ease 0.05s;
 }
 
 /* Efeitos para links sociais */
@@ -1373,7 +1460,8 @@ section {
 }
 
 .contact-icon:hover i {
-    animation: wiggle 0.5s ease-in-out;
+    color: var(--light-green);
+    transition: all 0.3s ease;
 }
 
 /* Animações para partículas */
