@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#2D5016"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round">
+    <!-- Lotus flower outline -->
+    <path d="M16 6 C16 6, 10 8, 8 12 C8 12, 10 16, 16 16 C16 16, 22 16, 24 12 C24 12, 22 8, 16 6 Z"/>
+    <path d="M16 10 C16 10, 12 12, 10 16 C10 16, 12 20, 16 20 C16 20, 20 20, 22 16 C22 16, 20 12, 16 10 Z"/>
+    <path d="M16 14 C16 14, 14 16, 12 20 C12 20, 14 24, 16 24 C16 24, 18 24, 20 20 C20 20, 18 16, 16 14 Z"/>
+    <!-- Center circle -->
+    <circle cx="16" cy="16" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>
