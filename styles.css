@@ -601,6 +601,8 @@ section {
 
 .image-container {
     position: relative;
+    box-shadow: 5px -3px 20px 1px #3d990052;
+    border-radius: 21px;
 }
 
 .profile-image {
