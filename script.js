@@ -1,6 +1,8 @@
 // WhatsApp Integration
 function openWhatsApp() {
-    const url = "https://api.whatsapp.com/message/N46PF7QAOR3DL1?autoload=1&app_absent=0&fbclid=PAT01DUAM1QzNleHRuA2FlbQIxMAABp1mjZb6dpjrutVQRmp__bruWFng9t7gQwIXjz6NKFmKdns5m0J1NUrUJwsmX_aem_lz-5HxZXwUiaiSRRsKNPeg";
+    const message = encodeURIComponent("Olá! Vim pelo seu site e gostaria de saber mais sobre os serviços de cerimonialista. Sonhei com o grande dia e quero realizá-lo com vocês! 💚");
+    const phoneNumber = "5511999998888";
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
 }
 
