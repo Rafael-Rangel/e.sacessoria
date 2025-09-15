@@ -1,8 +1,6 @@
 // WhatsApp Integration
 function openWhatsApp() {
-    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços de cerimonialista da Eloisa Soares.");
-    const phoneNumber = "5511999999999"; // Substitua pelo número real
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    const url = "https://api.whatsapp.com/message/N46PF7QAOR3DL1?autoload=1&app_absent=0&fbclid=PAT01DUAM1QzNleHRuA2FlbQIxMAABp1mjZb6dpjrutVQRmp__bruWFng9t7gQwIXjz6NKFmKdns5m0J1NUrUJwsmX_aem_lz-5HxZXwUiaiSRRsKNPeg";
     window.open(url, '_blank');
 }
 
