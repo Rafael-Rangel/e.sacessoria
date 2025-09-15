@@ -1400,6 +1400,34 @@ section {
     }
 }
 
+@keyframes horizontalFloat {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px));
+        opacity: 0;
+    }
+}
+
+@keyframes diagonalFloat {
+    0% {
+        transform: translate(0, 0) scale(0.8);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translate(100vw, -100vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
 /* Efeitos de hover para imagens */
 .profile-image:hover {
     transform: scale(1.05) rotate(1deg);

@@ -6,11 +6,11 @@ function openWhatsApp() {
 
 // Removido cursor customizado - usando apenas cursor.png e pointer padrão
 
-// Background particles system
+// Enhanced background particles system for all sections
 function createBackgroundParticles() {
     const sections = document.querySelectorAll('.hero, .about, .services, .portfolio, .contact');
     
-    sections.forEach(section => {
+    sections.forEach((section, sectionIndex) => {
         // Create particle container
         const particleContainer = document.createElement('div');
         particleContainer.className = 'background-particles';
@@ -25,18 +25,37 @@ function createBackgroundParticles() {
         
         section.appendChild(particleContainer);
         
+        // Different particle colors for each section
+        const particleColors = [
+            'rgba(143, 188, 143, 0.15)', // hero - light green
+            'rgba(45, 80, 22, 0.1)',     // about - dark green
+            'rgba(143, 188, 143, 0.12)', // services - light green
+            'rgba(45, 80, 22, 0.08)',    // portfolio - dark green
+            'rgba(143, 188, 143, 0.18)'  // contact - light green
+        ];
+        
         // Create floating particles
         function createBackgroundParticle() {
             const particle = document.createElement('div');
+            const size = Math.random() * 3 + 1; // 1-4px
+            const color = particleColors[sectionIndex];
+            
             particle.style.position = 'absolute';
-            particle.style.width = Math.random() * 4 + 2 + 'px';
-            particle.style.height = particle.style.width;
-            particle.style.background = 'rgba(143, 188, 143, 0.3)';
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.background = color;
             particle.style.borderRadius = '50%';
             particle.style.left = Math.random() * 100 + '%';
             particle.style.bottom = '-10px';
-            particle.style.animation = `subtleFloat ${Math.random() * 10 + 15}s linear infinite`;
-            particle.style.animationDelay = Math.random() * 5 + 's';
+            
+            // Random animation duration and delay
+            const duration = Math.random() * 8 + 12; // 12-20s
+            const delay = Math.random() * 3 + 's';
+            particle.style.animation = `subtleFloat ${duration}s linear infinite`;
+            particle.style.animationDelay = delay;
+            
+            // Add subtle glow effect
+            particle.style.boxShadow = `0 0 ${size * 2}px ${color}`;
             
             particleContainer.appendChild(particle);
             
@@ -45,16 +64,83 @@ function createBackgroundParticles() {
                 if (particle.parentNode) {
                     particle.remove();
                 }
-            }, 20000);
+            }, (duration + 5) * 1000);
         }
         
-        // Create particles periodically
-        setInterval(createBackgroundParticle, 3000);
+        // Create particles more frequently but with smaller size
+        setInterval(createBackgroundParticle, 2000 + Math.random() * 1000);
         
-        // Create initial particles
-        for (let i = 0; i < 5; i++) {
-            setTimeout(createBackgroundParticle, i * 1000);
+        // Create initial particles for each section
+        for (let i = 0; i < 8; i++) {
+            setTimeout(createBackgroundParticle, i * 800);
         }
+        
+        // Add horizontal floating particles
+        function createHorizontalParticle() {
+            const particle = document.createElement('div');
+            const size = Math.random() * 2 + 1; // 1-3px
+            const color = particleColors[sectionIndex];
+            
+            particle.style.position = 'absolute';
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.background = color;
+            particle.style.borderRadius = '50%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.left = '-10px';
+            
+            const duration = Math.random() * 15 + 20; // 20-35s
+            particle.style.animation = `horizontalFloat ${duration}s linear infinite`;
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            
+            particleContainer.appendChild(particle);
+            
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.remove();
+                }
+            }, (duration + 5) * 1000);
+        }
+        
+        // Create horizontal particles
+        setInterval(createHorizontalParticle, 4000 + Math.random() * 2000);
+        
+        // Add some diagonal particles
+        function createDiagonalParticle() {
+            const particle = document.createElement('div');
+            const size = Math.random() * 2 + 0.5; // 0.5-2.5px
+            const color = particleColors[sectionIndex];
+            
+            particle.style.position = 'absolute';
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.background = color;
+            particle.style.borderRadius = '50%';
+            
+            // Start from random corner
+            const corners = [
+                { left: '-10px', top: '-10px' },
+                { right: '-10px', top: '-10px' },
+                { left: '-10px', bottom: '-10px' },
+                { right: '-10px', bottom: '-10px' }
+            ];
+            const corner = corners[Math.floor(Math.random() * corners.length)];
+            Object.assign(particle.style, corner);
+            
+            const duration = Math.random() * 12 + 18; // 18-30s
+            particle.style.animation = `diagonalFloat ${duration}s linear infinite`;
+            particle.style.animationDelay = Math.random() * 3 + 's';
+            
+            particleContainer.appendChild(particle);
+            
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.remove();
+                }
+            }, (duration + 5) * 1000);
+        }
+        
+        setInterval(createDiagonalParticle, 6000 + Math.random() * 3000);
     });
 }
 
